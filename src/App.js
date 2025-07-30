@@ -4,6 +4,7 @@ import Header from "./myComponents/Header";
 import Footer from './myComponents/Footer';
 import HeroSection from './myComponents/HeroSection';
 import FeaturesSection from './myComponents/FeatureSection';
+import HowItWorks from './myComponents/Howitworks';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <HeroSection/>
     <FeaturesSection/>
+    <HowItWorks/>
     <Footer/>
     </>
   );
