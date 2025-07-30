@@ -1,0 +1,75 @@
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-right {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+
+.resume-img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1b3c53;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.hero-title .highlight {
+  color: #f75b42; /* Accent color for “resume” */
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #f75b42;
+  color: white;
+  margin-right: 1rem;
+}
+
+.btn.primary:hover {
+  background-color: #e04a33;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #f75b42;
+  color: #f75b42;
+}
+
+.btn.secondary:hover {
+  background-color: #f75b42;
+  color: white;
+}
+
