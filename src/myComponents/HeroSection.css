@@ -62,12 +62,6 @@
   background-color: #e04a33;
 }
 
-.btn.secondary {
-  background-color: transparent;
-  border: 2px solid #f75b42;
-  color: #f75b42;
-}
-
 .btn.secondary:hover {
   background-color: #f75b42;
   color: white;

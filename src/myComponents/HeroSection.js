@@ -31,7 +31,6 @@ export default function HeroSection() {
 
           <div className="hero-buttons">
             <button className="btn primary">Create My Resume</button>
-            <button className="btn secondary">See Examples</button>
           </div>
 
           <p className="trusted-text">
