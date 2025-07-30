@@ -19,7 +19,7 @@
 }
 
 .testimonial-card {
-  background: #ffffff;
+  background: #D2C1B6;
   border-radius: 12px;
   padding: 20px;
   max-width: 300px;
@@ -39,10 +39,10 @@
 
 .testimonial-name {
   font-weight: bold;
-  color: #007bff;
+  color: #456882;
 }
 
 .testimonial-role {
   font-size: 0.85rem;
-  color: #999;
+  color: #456882;
 }
