@@ -6,10 +6,12 @@ import resume1 from '../assets/resume1.png';
 import resume2 from '../assets/resume2.png';
 import resume3 from '../assets/resume3.png';
 import resume4 from '../assets/resume4.png';
+import { useNavigate } from 'react-router-dom';
 
 const resumes = [resume1, resume2, resume3, resume4];
 
 export default function HeroSection() {
+  const navigate = useNavigate();
   return (
     <section className="hero">
       <div className="hero-content">
@@ -30,7 +32,9 @@ export default function HeroSection() {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn primary">Create My Resume</button>
+      <button className="btn primary" onClick={() => navigate('/builder')}>
+        Create My Resume
+      </button>
           </div>
 
           <p className="trusted-text">

@@ -1,0 +1,124 @@
+.builder-heading {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+  color: #1B3C53;
+}
+
+.builder-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #F9F3EF;
+}
+
+.form-section {
+  flex: 1;
+  background: #D2C1B6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.preview-section {
+  flex: 1;
+  background: #D2C1B6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 0.5rem;
+  background-color: #456882;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.preview-section {
+  padding: 2rem;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.preview-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1B3C53;
+}
+
+.preview-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.preview-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.2rem;
+}
+
+.preview-email {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.preview-summary {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.preview-block {
+  margin-bottom: 1.5rem;
+}
+
+.preview-block h4 {
+  font-size: 18px;
+  color: #1B3C53;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.preview-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.preview-block li {
+  margin-bottom: 0.4rem;
+}
+
+.download-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #456882;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #0d6efd;
+}
