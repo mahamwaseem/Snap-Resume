@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ResumeBuilder.css';
 import html2pdf from 'html2pdf.js';
+import axios from 'axios';
+
 
 export default function ResumeBuilder() {
   const [name, setName] = useState('');
@@ -33,6 +35,24 @@ export default function ResumeBuilder() {
   const handleDownload = () => {
     const element = document.querySelector('.resume-preview'); // 👈 ONLY resume content
     html2pdf().from(element).save('My_Resume.pdf');
+  };
+
+  const handleSubmitToBackend = async () => {
+    try {
+      const data = {
+        name,
+        email,
+        summary,
+        experiences,
+        educationList,
+        skills
+      };
+      await axios.post('http://localhost:5000/api/resumes/submit', data);
+      alert('Resume saved successfully!');
+    } catch (error) {
+      console.error(error);
+      alert('Error saving resume');
+    }
   };
 
   return (
@@ -99,6 +119,10 @@ export default function ResumeBuilder() {
           value={skills}
           onChange={(e) => setSkills(e.target.value)}
         />
+        <button onClick={handleSubmitToBackend} className="save-btn">
+          Save
+        </button>
+
       </div>
 
       {/* Separate Preview Container */}

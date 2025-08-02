@@ -48,6 +48,24 @@ button {
   cursor: pointer;
 }
 
+.save-btn {
+  background-color: #456882; 
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+
 .preview-header {
   text-align: center;
   margin: 20px 0;
