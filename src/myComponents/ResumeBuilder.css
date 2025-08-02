@@ -8,10 +8,11 @@
 
 .builder-container {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: #F9F3EF;
+  flex-direction: column; /* Stack form + preview vertically */
+  align-items: center;
+  gap: 30px;
 }
+
 
 .form-section {
   flex: 1;
@@ -46,6 +47,26 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.preview-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.resume-preview {
+  display: flex;
+  flex-direction: column; /* Vertically stack elements */
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .preview-section {
   padding: 2rem;
   background-color: #f7f9fc;

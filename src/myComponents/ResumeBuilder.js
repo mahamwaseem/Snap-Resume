@@ -3,19 +3,11 @@ import './ResumeBuilder.css';
 import html2pdf from 'html2pdf.js';
 
 export default function ResumeBuilder() {
-  
-  // Personal Info
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [summary, setSummary] = useState('');
-
-  // Experience
   const [experiences, setExperiences] = useState([{ company: '', title: '', years: '' }]);
-
-  // Education
   const [educationList, setEducationList] = useState([{ school: '', degree: '', year: '' }]);
-
-  // Skills
   const [skills, setSkills] = useState('');
 
   const handleExperienceChange = (index, field, value) => {
@@ -39,9 +31,9 @@ export default function ResumeBuilder() {
   };
 
   const handleDownload = () => {
-  const element = document.querySelector('.preview-section');
-  html2pdf().from(element).save('My_Resume.pdf');
-};
+    const element = document.querySelector('.resume-preview'); // 👈 ONLY resume content
+    html2pdf().from(element).save('My_Resume.pdf');
+  };
 
   return (
     <div className="builder-container">
@@ -109,9 +101,13 @@ export default function ResumeBuilder() {
         />
       </div>
 
-      {/* LIVE PREVIEW */}
-      <div className="preview-section">
+      {/* Separate Preview Container */}
+      <div className="preview-header">
         <h2 className="preview-title">Live Preview</h2>
+      </div>
+
+      {/* This is the actual content to be downloaded */}
+      <div className="resume-preview">
         <div className="preview-content">
           <h3 className="preview-name">{name}</h3>
           <p className="preview-email">{email}</p>
@@ -141,8 +137,8 @@ export default function ResumeBuilder() {
           </div>
         </div>
       </div>
-      <button onClick={handleDownload} className="download-btn">Download PDF</button>
 
+      <button onClick={handleDownload} className="download-btn">Download PDF</button>
     </div>
   );
 }
