@@ -7,6 +7,8 @@ import resume2 from '../assets/resume2.png';
 import resume3 from '../assets/resume3.png';
 import resume4 from '../assets/resume4.png';
 import { useNavigate } from 'react-router-dom';
+import PaymentButton from './PaymentButton';
+
 
 const resumes = [resume1, resume2, resume3, resume4];
 
@@ -36,6 +38,9 @@ export default function HeroSection() {
         Create My Resume
       </button>
           </div>
+          <div>
+          <PaymentButton />
+        </div>
 
           <p className="trusted-text">
             Trusted by 6 million successful job seekers worldwide.

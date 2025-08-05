@@ -4,10 +4,13 @@ const cors = require('cors');
 require('dotenv').config();
 
 const resumeRoutes = require('./routes/resumeR');
+const paymentRoutes = require('./routes/payments');
+
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use('/api', paymentRoutes);
 
 mongoose.connect("mongodb://127.0.0.1:27017/snapresume")
   .then(() => console.log('MongoDB connected'))

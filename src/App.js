@@ -8,6 +8,7 @@ import Testimonials from './myComponents/Testimonials';
 import ResumeBuilder from './myComponents/ResumeBuilder';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Success from "./myComponents/Success"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           } />
 
           <Route path="/builder" element={<ResumeBuilder />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
 
         <Footer />
