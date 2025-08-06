@@ -1,4 +1,3 @@
-// PaymentButton.js
 import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import axios from 'axios';
@@ -7,24 +6,28 @@ const stripePromise = loadStripe('pk_test_51RrepPRzpNjUxuCBx9LvI9DcVYrCF6MLOJvhm
 
 export default function PaymentButton() {
   const handleCheckout = async () => {
-    const stripe = await stripePromise;
-    
-    const response = await axios.post('http://localhost:5000/api/create-checkout-session');
-
-
-    const result = await stripe.redirectToCheckout({
-      sessionId: response.data.id,
+    const res = await fetch("http://localhost:5000/api/payments/create-checkout-session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
     });
-
-    if (result.error) {
-      alert(result.error.message);
-    }
+    const session = await res.json();
+    const stripe = await stripePromise;
+    await stripe.redirectToCheckout({ sessionId: session.id });
   };
 
-  return <button
-          onClick={handleCheckout}
-          style={{ backgroundColor: '#f75b42', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', fontWeight: 'bold' }}
-        >
-          Payment
-        </button>
+  return (
+    <button
+      onClick={handleCheckout}
+      style={{
+        backgroundColor: '#f75b42',
+        color: 'white',
+        border: 'none',
+        padding: '8px 16px',
+        borderRadius: '4px',
+        fontWeight: 'bold'
+      }}
+    >
+      Payment
+    </button>
+  );
 }
