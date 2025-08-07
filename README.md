@@ -94,27 +94,50 @@ ZIP: Any 5 digits
 
 
 snap_resume/
+
 │
+
 ├── Backend/
+
 │   ├── routes/
+
 │   │   ├── payments.js
+
 │   │   └── resumeR.js
+
 │   ├── models/
+
 │   │   ├── Payment.js
+
 │   │   └── Resume.js
+
 │   ├── servers.js
-│   
+
+│  
+
 │
+
 ├─ (React App)
+
 │   ├── src/
+
 │   │   ├── myComponents/
+
 │   │   │   ├── PaymentButton.js
+
 │   │   │   ├── HeroSection.js
-│   │   │   └── Header.js
-|   |   |   └── Footer.js
+
+│   │   │   ├── Header.js
+
+│   │   │    ├── Footer.js
+
+
 │   ├── package.json
+
 │   
+
 │
+
 └── README.md
 
 
