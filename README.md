@@ -7,12 +7,17 @@ With real-time preview,  and integrated payment gateway, creating and downloadin
 
 ## 🚀 Features
 
-- 🧾 Easy-to-use form for entering resume details
-- 🔄 Real-time resume preview
-- 📥 Download resume as PDF after payment
-- 💳 Stripe payment gateway integration (Test mode ready)
-- 💾 Option to save and load resume data locally
-- 📱 Fully responsive design
+🧾 Easy-to-use form for entering resume details
+
+🔄 Real-time resume preview
+
+📥 Download resume as PDF after payment
+
+💳 Stripe payment gateway integration (Test mode ready)
+
+💾 Option to save and load resume data locally
+
+📱 Fully responsive design
 
 ---
 
@@ -33,7 +38,7 @@ With real-time preview,  and integrated payment gateway, creating and downloadin
 
 ## ⚙️ How to Run the Project
 
-### 1️⃣ Prerequisites
+### 1. Prerequisites
 Make sure you have installed:
 - [Node.js](https://nodejs.org/) (v16+ recommended)
 - [MongoDB](https://www.mongodb.com/try/download/community) running locally or in the cloud
@@ -41,7 +46,7 @@ Make sure you have installed:
 
 ---
 
-### 2️⃣ Clone the Repository
+### 2.  Clone the Repository
 
 git clone https://github.com/mahamwaseem/snap_resume.git
 
@@ -50,7 +55,7 @@ cd snap_resume
 
 ---
 
-### 3️⃣ Backend Setup
+### 3. Backend Setup
 
 
 cd Backend
@@ -74,15 +79,14 @@ cd ../Components
 
 npm install
 
-
-
-
-Frontend will run at: 
-
+Frontend will run at:
 [http://localhost:3000]
+
+
+
 ---
 
-### 5️⃣ Test Payments (Stripe Test Mode)
+### 5.  Test Payments (Stripe Test Mode)
 
 In checkout, use Stripe’s test card:
 
