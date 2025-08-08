@@ -44,6 +44,7 @@ Make sure you have installed:
 ### 2️⃣ Clone the Repository
 
 git clone https://github.com/mahamwaseem/snap_resume.git
+
 cd snap_resume
 
 
@@ -53,6 +54,7 @@ cd snap_resume
 
 
 cd Backend
+
 npm install
 
 Run the backend:
@@ -69,12 +71,15 @@ Backend will run at: [http://localhost:5000]
 
 
 cd ../Components
+
 npm install
 
 
 
 
-Frontend will run at: [http://localhost:3000]
+Frontend will run at: 
+
+[http://localhost:3000]
 ---
 
 ### 5️⃣ Test Payments (Stripe Test Mode)
@@ -83,8 +88,11 @@ In checkout, use Stripe’s test card:
 
 
 Card Number: 4242 4242 4242 4242
+
 Expiry: Any future date (MM/YY)
+
 CVC: Any 3 digits
+
 ZIP: Any 5 digits
 
 
